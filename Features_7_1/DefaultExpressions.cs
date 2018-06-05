@@ -19,7 +19,7 @@ namespace Features_7_1
 
         public int Sum(params int[] numbers)
         {
-            if (numbers is default || numbers.Length == default)
+            if (numbers.Length == default)
             {
                 return default; // Returns 0
             }
