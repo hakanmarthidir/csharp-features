@@ -12,9 +12,20 @@ namespace Features_7_2
         public void MethodWithInParameter(in string name)
         {
             //Methodlara verilen parametrelerin readonly bir sekilde davranmasını saglayan keyworddur.
-            //Bu nedenle asagidaki kod hata verecektir. 
+            //Foreach veya LINQ ile kullanılabilir. 
+
+            //Asagidaki kod hata verecektir.
             //name = "asdasd";
         }
 
+        //Ref, Out, In ile overload edilemez. Aşağıdaki method tanımı hata verecektir. 
+
+        //public void MethodWithInParameter(ref string name)
+        //{            
+        //}
+
+        //public void MethodWithInParameter(out string name)
+        //{            
+        //}
     }
 }
