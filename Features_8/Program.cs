@@ -21,7 +21,10 @@ namespace Features_8
             defInterface.RecordStudents(mockStudents);
             defInterface.RecordStudent("c");
 
-            //
+            //SwitchExpressions
+
+            var switchObject = new SwitchExpressions();
+            Console.WriteLine(switchObject.GiveRate(CustomerType.ShoppingCenter, 10));
 
             Console.Read();
         }
