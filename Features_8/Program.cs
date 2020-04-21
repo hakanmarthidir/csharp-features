@@ -33,6 +33,14 @@ namespace Features_8
             Console.WriteLine(PropertyPattern.Calculate(student1, 40));
             Console.WriteLine(PropertyPattern.Calculate(student2, 40));
 
+            //Tuple Pattern
+            Console.WriteLine(TuplePattern.GiveMyState("y", "z", "x"));
+
+            //Positional Pattern
+            Console.WriteLine(PositionalPattern.WhichTriangleIsMine(new MyTriangle(1, 1, 1)));
+            Console.WriteLine(PositionalPattern.WhichTriangleIsMine(new MyTriangle(1, 2, 2)));
+            Console.WriteLine(PositionalPattern.WhichTriangleIsMine(new MyTriangle(1, 2, 3)));
+
             Console.Read();
         }
     }
