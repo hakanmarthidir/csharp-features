@@ -26,6 +26,13 @@ namespace Features_8
             var switchObject = new SwitchExpressions();
             Console.WriteLine(switchObject.GiveRate(CustomerType.ShoppingCenter, 10));
 
+            //PropertyPattern
+            var student1 = new Student() { Name = "aaa", BahnRegion = BahnRegions.Region2 };
+            var student2 = new Student() { Name = "bbb", BahnRegion = BahnRegions.Region3 };
+
+            Console.WriteLine(PropertyPattern.Calculate(student1, 40));
+            Console.WriteLine(PropertyPattern.Calculate(student2, 40));
+
             Console.Read();
         }
     }
