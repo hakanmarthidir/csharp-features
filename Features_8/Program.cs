@@ -41,6 +41,10 @@ namespace Features_8
             Console.WriteLine(PositionalPattern.WhichTriangleIsMine(new MyTriangle(1, 2, 2)));
             Console.WriteLine(PositionalPattern.WhichTriangleIsMine(new MyTriangle(1, 2, 3)));
 
+            //StaticLocalFunc
+            StaticLocalFunctions.TriangleFindC(3, 4);
+
+
             Console.Read();
         }
     }
