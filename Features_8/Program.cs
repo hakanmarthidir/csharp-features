@@ -47,6 +47,8 @@ namespace Features_8
             //Indices and ranges 
             IndicesAndRanges myrange = new IndicesAndRanges();
 
+            //Null assignment operator
+            NullAssignmentOperator nullAssigner = new NullAssignmentOperator();
 
             Console.Read();
         }
