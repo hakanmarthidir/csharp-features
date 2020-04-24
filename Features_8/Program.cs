@@ -44,6 +44,9 @@ namespace Features_8
             //StaticLocalFunc
             StaticLocalFunctions.TriangleFindC(3, 4);
 
+            //Indices and ranges 
+            IndicesAndRanges myrange = new IndicesAndRanges();
+
 
             Console.Read();
         }
