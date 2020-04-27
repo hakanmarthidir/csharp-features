@@ -50,6 +50,13 @@ namespace Features_8
             //Null assignment operator
             NullAssignmentOperator nullAssigner = new NullAssignmentOperator();
 
+            //String Interpolation
+            StringInterpolation.OldStyleStringComposition();
+            StringInterpolation.WithStringInterpolation("Hakan", 23);
+
+            //StackAlloc Nested
+            StackallocInNestedExpressions.UseStackAllocate(5);
+
             Console.Read();
         }
     }
