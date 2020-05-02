@@ -4,7 +4,7 @@ namespace Features_8
 {
     class Program
     {
-        static void Main(string[] args)
+        static async System.Threading.Tasks.Task Main(string[] args)
         {
             //ReadOnlyMembers
             var readStruct = new ReadOnlyMembers();
@@ -56,6 +56,14 @@ namespace Features_8
 
             //StackAlloc Nested
             StackallocInNestedExpressions.UseStackAllocate(5);
+
+
+            //Async Streams
+            AsynchronousStreams myStream = new AsynchronousStreams();
+            await foreach (var content in myStream.GetFirstThreeContentsAsStream())
+            {
+                Console.WriteLine(content);
+            }
 
             Console.Read();
         }
