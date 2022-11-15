@@ -13,6 +13,11 @@ namespace Features_10
     public record struct MyRecord3(string Name);
     public readonly record struct MyRecord4
     {
+        public MyRecord4(string name)
+        {
+            this.Name = name;
+        }
+
         public int Id { get; init; } = default!;
         public string Name { get; init; }
     }
